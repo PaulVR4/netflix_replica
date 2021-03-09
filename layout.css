@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+body {
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.top-header {
+  width: 99vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  background:  url("img/charles-deluvio-unsplash.jpg");
+  background-size: 100%;
+}
+
+.top-nav {
+  width: 99%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  padding-right: 20px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .intro {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .title2 {
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: .7rem;
+    padding: 10px;
+  }
+}
+.register-mail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.mail-form {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.second-card {
+  height: 100%;
+  width: auto;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.tv-set {
+  height: 50%;
+  width: auto;
+}
+
+.image-tv-set {
+  height: 50%;
+  width: auto;
+  position: relative;
+  z-index: 1;
+}
+.film1 {
+  width: auto;
+  position: relative;
+  top: -388px;
+  left: 75px;
+}
+
+.tv-set {
+  overflow: hidden;
+  max-height: 50vh;
+}
+
+.all-device {
+  height: 50%;
+  width: auto;
+  position: relative;
+  z-index: 1;
+}
+.film2 {
+  position: relative;
+  top: -460px;
+  left: 105px;
+}
+
+@media screen and (max-width: 600px) {
+  .second-text > h1 {
+    font-size: 1.7rem;
+    padding-bottom: 0;
+  }
+  .second-text > h2 {
+    font-size: 1.1rem;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    overflow: scroll;
+  }
+}
+
+.mobile-pic {
+  padding: 0 0 10px 0;
+}
+
+.picture-card {
+  padding-top: 0;
+}
+
+.loading-img {
+  height: 110px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 15px;
+}
+
+.mobile-card {
+  overflow: hidden;
+  max-height: 51vh;
+}
+
+.loading {
+  background: black;
+  position: relative;
+  top: -160px;
+  left: 90px;
+}
+
+.final {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+h4 {
+  margin: 70px 0 25px 0px;
+  font-weight: bold;
+}
+ul {
+  font-size: 13px;
+  margin-bottom: 20px;
+  line-height: 2;
+  list-style: none;
+  color: grey;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+}
+
+@media screen and (max-width: 1040px) {
+  ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+li {
+  overflow: visible;
+}
+
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
